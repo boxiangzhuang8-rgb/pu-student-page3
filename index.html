@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>靜宜中文系小道消息</title>
+  <meta name="description" content="靜宜中文系小道消息：嵌入與下載指定之 Google 雲端硬碟檔案的簡易頁面" />
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f172a; --text:#ecf2ff; --muted:#b3c0d9; --border:#1e293b; --primary:#60a5fa; --shadow:0 10px 30px rgba(2,6,23,.35)
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans TC", Helvetica, Arial; background:var(--bg); color:var(--text);}
+    header{position:sticky; top:0; background:rgba(15,23,42,.7); backdrop-filter: blur(8px); border-bottom:1px solid var(--border)}
+    .container{width:min(1000px, calc(100% - 2rem)); margin-inline:auto}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:.9rem 0}
+    h1{font-size:clamp(1.5rem,3.6vw,2.25rem); margin:0}
+    main{padding:2rem 0; display:flex; flex-direction:column; gap:2rem;}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:1rem; box-shadow:var(--shadow); overflow:hidden}
+    .pad{padding:1rem}
+    p{color:var(--muted)}
+    .btns{display:flex; flex-wrap:wrap; gap:.6rem}
+    .btn{display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:.75rem; border:1px solid var(--border); color:var(--text); background:#111827; text-decoration:none}
+    .btn.primary{background:var(--primary); color:#0b1220; font-weight:700}
+    iframe{width:100%; height:72vh; border:0; display:block}
+    footer{color:var(--muted); border-top:1px solid var(--border); padding:1.5rem 0; font-size:.95rem}
+    .note{font-size:.95rem; margin:.75rem 0 0}
+    @media (max-width:700px){iframe{height:64vh}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1>靜宜中文系小道消息</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 最上面檔案 -->
+    <section class="card">
+      <iframe title="Google Drive 檔案預覽 (最上方)"
+              src="https://drive.google.com/file/d/1DeuC_f744m4gTEnZIOKm6U8vl9NaYtc1/preview"
+              allow="autoplay"></iframe>
+      <div class="pad">
+        <div class="btns">
+          <a class="btn" href="https://drive.google.com/file/d/1DeuC_f744m4gTEnZIOKm6U8vl9NaYtc1/view?usp=sharing" target="_blank" rel="noopener">在雲端硬碟開啟</a>
+          <a class="btn primary" href="https://drive.google.com/uc?export=download&id=1DeuC_f744m4gTEnZIOKm6U8vl9NaYtc1">直接下載</a>
+        </div>
+        <p>若上方預覽無法顯示，請點擊按鈕開啟或下載。</p>
+      </div>
+    </section>
+
+    <!-- 原本的檔案 -->
+    <section class="card">
+      <iframe title="Google Drive 檔案預覽 (中間)"
+              src="https://drive.google.com/file/d/12mzd_Dj5yqwPXoDgVbwzEHufZcwOOCGY/preview"
+              allow="autoplay"></iframe>
+      <div class="pad">
+        <div class="btns">
+          <a class="btn" href="https://drive.google.com/file/d/12mzd_Dj5yqwPXoDgVbwzEHufZcwOOCGY/view?usp=sharing" target="_blank" rel="noopener">在雲端硬碟開啟</a>
+          <a class="btn primary" href="https://drive.google.com/uc?export=download&id=12mzd_Dj5yqwPXoDgVbwzEHufZcwOOCGY">直接下載</a>
+        </div>
+        <p>若上方預覽無法顯示，請點擊按鈕開啟或下載。</p>
+      </div>
+    </section>
+
+    <!-- 最下面檔案 -->
+    <section class="card">
+      <iframe title="Google Drive 檔案預覽 (最下方)"
+              src="https://drive.google.com/file/d/1DGkK-3JbfAH0ktk2VE6w6ckwsAaM9LMI/preview"
+              allow="autoplay"></iframe>
+      <div class="pad">
+        <div class="btns">
+          <a class="btn" href="https://drive.google.com/file/d/1DGkK-3JbfAH0ktk2VE6w6ckwsAaM9LMI/view?usp=sharing" target="_blank" rel="noopener">在雲端硬碟開啟</a>
+          <a class="btn primary" href="https://drive.google.com/uc?export=download&id=1DGkK-3JbfAH0ktk2VE6w6ckwsAaM9LMI">直接下載</a>
+        </div>
+        <p>若上方預覽無法顯示，請點擊按鈕開啟或下載。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      本頁以純 HTML/CSS 製作，可直接上傳至任一靜態主機。<br>
+      製作人：中一A 莊博翔
+    </div>
+  </footer>
+</body>
+</html>
